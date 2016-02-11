@@ -1,0 +1,17 @@
+#header {
+	background-color:red;
+	text-align:center;
+	}
+#header ul li {
+	display:inline;
+	border: solid 1px black;
+	padding: 10px;
+	margin: 10px;
+	list-style-type: none;
+	line-height: 4em;
+	}
+#header a {
+	color:inherit;
+	text-decoration:none;
+	}
+	

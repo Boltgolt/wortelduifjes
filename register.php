@@ -15,8 +15,7 @@
 		<input name="lastName" placeholder="Achternaam"><br />
 		<input name="password" placeholder="Wachtwoord" type="password"><br />
 		<input name="email" placeholder="Email" type="email"><br />
-		<input name="color" placeholder="Schilkleur"><br />
-		<input name="age" placeholder="Leeftijd (in dagen na oogst)"><br />
+		<input name="age" placeholder="Leeftijd"><br />
 		<input name="lookingFor" placeholder="Opzoek naar"><br />
 		<textarea name="description" placeholder="Beschrijving"></textarea><br />
 		Kies een foto: <input name="photo" type="file"><br />

@@ -65,9 +65,9 @@
 		abort("Een foto moet een afbeelding zijn");
 	}
 
-	$query = mysqli_query($mysqli, "INSERT INTO users (id, firstName, lastName, email, color, regDate, age, lookingFor, description, hash) VALUES (DEFAULT, '"
+	$query = mysqli_query($mysqli, "INSERT INTO users (id, firstName, lastName, email, regDate, age, lookingFor, description, hash) VALUES (DEFAULT, '"
 		. mysqli_escape_string($mysqli, $_POST["firstName"]) . "', '" . mysqli_escape_string($mysqli, $_POST["lastName"]) . "', '" . mysqli_escape_string($mysqli, $_POST["email"])
-		. "', '" . mysqli_escape_string($mysqli, $_POST["color"]) . "', '" . time() . "', '" . mysqli_escape_string($mysqli, $_POST["age"]) . "', '"
+		. "', '" . time() . "', '" . mysqli_escape_string($mysqli, $_POST["age"]) . "', '"
 		. mysqli_escape_string($mysqli, $_POST["lookingFor"]) . "', '" . mysqli_escape_string($mysqli, $_POST["description"]) . "', '" . md5($_POST["password"]) . "')");
 
 	if (!$query) {
@@ -78,8 +78,9 @@
 		abort("Fout tijdens opslaan foto");
 	}
 
-
 	header("Location: /profile.php?id=" . mysqli_insert_id($mysqli), true, 302);
-	die();
+
+	session_start();
+	$_SESSION["id"] = mysqli_insert_id($mysqli);
 
 ?>

@@ -1,0 +1,129 @@
+#header {
+	text-align: center;
+	background: #f39c12;
+	color: white;
+	position: fixed;
+	z-index: 10;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+
+#header ul {
+	margin: 0;
+}
+
+#header ul li {
+	display: inline-block;
+	padding: 10px;
+	margin: 10px;
+	list-style-type: none;
+	line-height: 4em;
+	background: url("../images/wortel.png");
+	background-size: contain;
+	width: 110px;
+	height: 16px;
+	padding: 10px 0px 0px 10px;
+}
+
+#header a {
+	color: inherit;
+	text-decoration: none;
+}
+
+#landingBack {
+	background: url("../images/background.jpg");
+	background-size: cover;
+	background-position: center center;
+	position: absolute;;
+	z-index: 0;
+	top: 0;
+	left: 0;
+	padding-top: 200px;
+	height: calc(100vh - 200px);
+	width: 100vw;
+	color: #ffb033;
+	text-align: center;
+}
+
+#landingBack span {
+	text-align: center;
+	display: block;
+	font-size: 70px;
+	font-weight: lighter;
+	text-shadow: 2px 1px 6px rgba(0, 0, 0, 0.6);
+}
+
+#landingBack span strong {
+	font-weight: normal;
+	text-shadow: 2px 1px 6px rgba(0, 0, 0, 0.4);
+}
+
+#landingBack button {
+	display: inline-block;
+	border: 3px solid #ffb033;
+	background: none;
+	color: #ffb033;
+	font-weight: normal;
+	padding: 15px;
+	font-size: 22px;
+	cursor: pointer;
+	text-shadow: 2px 1px 6px rgba(0, 0, 0, 0.6);
+	margin-top: 10vh;
+	box-shadow: 2px 1px 6px 0px rgba(0, 0, 0, 0.6), 2px 1px 6px 0px rgba(0, 0, 0, 0.6) inset;
+	transition: padding .2s, font .2s;
+}
+
+#landingBack button:hover {
+	padding: 18px;
+	font-size: 25px;
+}
+
+#explanation {
+	position: absolute;
+	top: 100vh;
+	left: 0;
+	height: 600px;
+	width: 100vw;
+	background: #e67e22;
+	z-index: 1;
+}
+
+#explanation > div {
+	width: 80vw;
+	margin: auto;
+	margin-top: 100px;
+}
+
+#explanation p {
+	float: right;
+	width: calc(100% - 500px);
+	text-align: center;
+	color: white;
+	font-size: 40px;
+	height: 200px;
+	font-weight: lighter;
+	margin-top: 100px;
+}
+
+#quote {
+	position: absolute;
+	top: 130vh;
+	left: 0;
+	height: 600px;
+	width: 100vw;
+	z-index: 0;
+}
+
+#quote > div {
+	width: 80vw;
+	margin: auto;
+	margin-top: 100px;
+}
+
+#quote p {
+	color: #3E3E3E;
+	font-size: 40px;
+	text-align: center;
+	width: 100%;
+}

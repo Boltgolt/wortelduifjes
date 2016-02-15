@@ -30,7 +30,7 @@
 					elem.innerHTML = opp[index];
 					elem.style.opacity = 1;
 				}, 310);
-			}, 3000);
+			}, 2500);
 		})
 	</script>
 
@@ -42,10 +42,10 @@
 <body>
 	<div id="header">
 		<ul>
-			<li><a href="/login.php">Log in</a></li>
-			<li><a href="/register.php">Registreer</a></li>
-			<li><a href="/overOns">Over ons</a></li>
-			<li><a href="/contact">Contact</a></li>
+			<a href="/login.php"><li>Log in</li></a>
+			<a href="/register.php"><li>Registreer</li></a>
+			<a href="/overOns.php"><li>Over ons</li></a>
+			<a href="/contact.php"><li>Contact</li></a>
 		</ul>
 	</div>
 	<div id="landingBack">

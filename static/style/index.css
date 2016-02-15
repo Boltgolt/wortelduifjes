@@ -4,7 +4,7 @@ body {
 
 #header {
 	text-align: center;
-	background: #f39c12;
+	background: #e67e22;
 	color: white;
 	position: fixed;
 	z-index: 10;
@@ -15,26 +15,20 @@ body {
 
 #header ul {
 	margin: 0;
+	list-style-type: none;
 }
 
 #header ul li {
-	display: inline-block;
+	display: inline;
 	padding: 10px;
-	margin: 10px;
-	list-style-type: none;
+	margin: 10px 20px;
 	line-height: 4em;
-	background: url("../images/wortel.png");
-	background-size: contain;
-	width: 89px;
-	height: 16px;
-	padding: 10px 0px 0px 10px;
 }
 
 #header a {
 	color: inherit;
 	text-decoration: none;
-	display: block;
-	margin-top: -25px;
+	display: inline;
 }
 
 #landingBack, #hurrytheforkup {
@@ -160,6 +154,10 @@ body {
 	text-decoration: none;
 	color: #ffb033;
 	text-shadow: 2px 1px 6px rgba(0, 0, 0, .5);
+}
+
+#hurrytheforkup a:hover {
+	text-decoration: underline;
 }
 
 #hurrytheforkup span {

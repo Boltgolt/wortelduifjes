@@ -1,3 +1,7 @@
+body {
+	position: relative;
+}
+
 #header {
 	text-align: center;
 	background: #f39c12;
@@ -31,14 +35,11 @@
 	text-decoration: none;
 }
 
-#landingBack {
+#landingBack, #hurrytheforkup {
 	background: url("../images/background.jpg");
 	background-size: cover;
 	background-position: center center;
-	position: absolute;;
 	z-index: 0;
-	top: 0;
-	left: 0;
 	padding-top: 200px;
 	height: calc(100vh - 200px);
 	width: 100vw;
@@ -80,10 +81,8 @@
 }
 
 #explanation {
-	position: absolute;
-	top: 100vh;
 	left: 0;
-	height: 600px;
+	height: 500px;
 	width: 100vw;
 	background: #e67e22;
 	z-index: 1;
@@ -92,7 +91,6 @@
 #explanation > div {
 	width: 80vw;
 	margin: auto;
-	margin-top: 100px;
 }
 
 #explanation p {
@@ -103,22 +101,27 @@
 	font-size: 40px;
 	height: 200px;
 	font-weight: lighter;
-	margin-top: 100px;
+	margin-top: 50px;
+}
+
+#explanation img {
+	margin-top: 50px;
 }
 
 #quote {
-	position: absolute;
-	top: 130vh;
-	left: 0;
-	height: 600px;
 	width: 100vw;
 	z-index: 0;
+	background: #ecf0f1;
+	padding-top: 10vh;
+	text-align: right;
 }
 
 #quote > div {
 	width: 80vw;
 	margin: auto;
 	margin-top: 100px;
+	position: relative;
+	margin-bottom: -5px;
 }
 
 #quote p {
@@ -126,4 +129,67 @@
 	font-size: 40px;
 	text-align: center;
 	width: 100%;
+	font-family: 'Architects Daughter', cursive;
+}
+
+#quote span {
+	font-size: 23px;
+	color: #8C8C8C;
+	position: absolute;
+	margin-top: 62px;
+	margin-right: 55px;
+	right: 200px;
+}
+
+#hurrytheforkup {
+	background: url("../images/rozen.jpg");
+	background-size: cover;
+	background-position: center center;
+	padding-top: 100px;
+	padding-bottom: 50px;
+	height: 200px;
+	color: white;
+	font-size: 60px;
+	font-weight: lighter;
+	text-shadow: 2px 1px 6px rgba(0, 0, 0, .6);
+}
+
+#hurrytheforkup a {
+	text-decoration: none;
+	color: #ffb033;
+	text-shadow: 2px 1px 6px rgba(0, 0, 0, .5);
+}
+
+#hurrytheforkup span {
+	opacity: 1;
+	width: 380px;
+	display: inline-block;
+	transition: opacity .3s;
+}
+
+#footer {
+	background: rgba(0,0,0,.7);
+	height: 50px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+
+#footer > div {
+	width: 80vw;
+	margin: auto;
+}
+
+#footer span {
+	margin-top: 14px;
+	color: #A9AFB0;
+}
+
+#footer span:first-child {
+	float: left;
+}
+
+#footer span:last-child {
+	float: right;
 }

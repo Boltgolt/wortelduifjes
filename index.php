@@ -42,15 +42,15 @@
 <body>
 	<div id="header">
 		<ul>
-			<li><a href="/action/login.php">Log in</a></li>
-			<li><a href="/action/register.php">Registreer</a></li>
+			<li><a href="/login.php">Log in</a></li>
+			<li><a href="/register.php">Registreer</a></li>
 			<li><a href="/overOns">Over ons</a></li>
 			<li><a href="/contact">Contact</a></li>
 		</ul>
 	</div>
 	<div id="landingBack">
 		<span>Zoek je <strong>exacte</strong> match</span>
-		<button>Registreer nu</button>
+		<a href="/register.php"><button>Registreer nu</button></a>
 	</div>
 	<div id="explanation">
 		<div data-200-bottom="opacity: 0" data--100-bottom="opacity: 1">

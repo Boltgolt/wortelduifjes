@@ -3,8 +3,13 @@
 ?>
 <!DOCTYPE html>
 <html>
-<head>
+<head></head>
 	<title><?= $globalTitle ?> - Registreer</title>
+	<link rel="stylesheet" type="text/css" href="register.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Architects+Daughter|Open+Sans:400,300">
+	<link rel="stylesheet" type="text/css" href="static/style/global.css">
+	<link rel="stylesheet" type="text/css" href="static/style/index.css">
 </head>
 <body>
 	<?php if (!empty($_GET["error"])): ?>
@@ -18,8 +23,8 @@
 		<input name="age" placeholder="Leeftijd"><br />
 		<input name="lookingFor" placeholder="Opzoek naar"><br />
 		<textarea name="description" placeholder="Beschrijving"></textarea><br />
-		Kies een foto: <input name="photo" type="file"><br />
-		<input type="submit" value="Verstuur">
+		Kies een foto:<input name="photo" type="file"><br />
+		<button><input type="submit" value="Verstuur"></button>
 	</form>
 </body>
 </html>

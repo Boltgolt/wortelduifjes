@@ -10,7 +10,7 @@
 	<script type="text/javascript" src="static/script/skrollr.min.js"></script>
 	<script type="text/javascript">
 		window.addEventListener("load", function() {
-			var s = skrollr.init();
+			var s = skrollr.init({"forceHeight": false, "smoothScrollingDuration": 50});
 
 			var opp = ["worteltrekken", "differentiëren", "analyseren", "integreren"]
 			var elem = document.getElementById("opp")
@@ -40,14 +40,7 @@
 	<link rel="stylesheet" type="text/css" href="static/style/index.css">
 </head>
 <body>
-	<div id="header">
-		<ul>
-			<a href="/login.php"><li>Log in</li></a>
-			<a href="/register.php"><li>Registreer</li></a>
-			<a href="/overOns.php"><li>Over ons</li></a>
-			<a href="/contact.php"><li>Contact</li></a>
-		</ul>
-	</div>
+	<?php require "header.php" ?>
 	<div id="landingBack">
 		<span>Zoek je <strong>exacte</strong> match</span>
 		<a href="/register.php"><button>Registreer nu</button></a>
@@ -65,11 +58,11 @@
 			<p data-200-bottom="opacity: 0" data--200-bottom="opacity: 1">
 				"Ik dacht dat de <strong>kans</strong> dat ik mijn wederhelft tegenkwam even <strong>reëel</strong> was als de <strong>wortel van -2</strong>, maar Wortelduifjes™ heeft het tegendeel bewezen."
 			</p>
-			<span  data-100-bottom="margin-right: 0px; opacity: 0;" data--200-bottom="margin-right: 55px; opacity: 1;">Gill Bates, Wiskundedocent</span>
+			<span  data-100-bottom="margin-right: 0px; opacity: 0;" data-center-top="margin-right: 55px; opacity: 1;">Gill Bates, Wiskundedocent</span>
 			<img src="static/images/person.png">
 		</div>
 	</div>
-	<div id="hurrytheforkup" data-bottom-top="background-position: 0% 15%;" data-bottom="background-position: 0% 28%;">
+	<div id="hurrytheforkup" data-bottom-top="background-position: 0% 30%;" data-bottom="background-position: 0% 15%;">
 		<div>
 			Stop met <span id="opp">worteltrekken</span>, <a href="/register.php">registreer nu</a>.
 		</div>

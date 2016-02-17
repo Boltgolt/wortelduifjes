@@ -13,6 +13,7 @@ body {
 
 #landingBack {
 	background: url("../images/background.jpg");
+	background-color: #363b41;
 	background-size: cover;
 	background-position: center center;
 	-webkit-animation: pulse 4s infinite;
@@ -157,6 +158,7 @@ body {
 
 #hurrytheforkup {
 	background: url("../images/rozen.jpg");
+	background-color: #1F1F1F;
 	background-size: cover;
 	background-position: center center;
 	padding-top: 100px;

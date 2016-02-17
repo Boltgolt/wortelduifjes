@@ -76,7 +76,7 @@
 	</div>
 	<div id="footer">
 		<div>
-			<span>©2015, Wortelduifjes™</span>
+			<span>©2016, Wortelduifjes™</span>
 			<span>Cookies</span>
 		</div>
 	</div>

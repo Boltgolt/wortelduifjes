@@ -69,7 +69,7 @@
 			<img src="static/images/person.png">
 		</div>
 	</div>
-	<div id="hurrytheforkup">
+	<div id="hurrytheforkup" data-bottom-top="background-position: 0% 15%;" data-bottom="background-position: 0% 28%;">
 		<div>
 			Stop met <span id="opp">worteltrekken</span>, <a href="/register.php">registreer nu</a>.
 		</div>

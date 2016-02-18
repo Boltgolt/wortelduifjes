@@ -1,42 +1,25 @@
-input {
-	margin: 0px 0px 10px 0px;
-	width: 120px;
-	height: 25px;
-	font-size: 14px;
-	line-height: 24px;
-	text-decoration: none;
-	resize: none;
-	transition: 0.1s;
-}
-input:hover {
-    margin: 0 0 8px 0;
-	box-shadow: 0px 0px 8px 2px #e67e22;
-}
-textarea {
-	height: 50px;
-	width: 250px;
-	outline: none;
-	resize: none;
-	transition: 0.1s;
-	
-}
-textarea:hover {
-	margin: 0 0 8px 0;
-	box-shadow: 0px 0px 8px 2px #e67e22;
-}
-button:hover {
-	padding: 18px;
-	font-size: 25px;
-}
-button {
-	display: inline-block;
-	border: 3px solid #ffb033;
-	background: none;
-	color: #ffb033;
-	font-weight: normal;
-	padding: 15px;
-	font-size: 22px;
-	cursor: pointer;
-	box-shadow: 2px 1px 6px 0px rgba(0, 0, 0, 0.6), 2px 1px 6px 0px rgba(0, 0, 0, 0.6) inset;
-	transition: padding .2s, font .2s;
+input, textarea { 
+    padding: 8px; 
+    border: 0; 
+    outline: 0;  
+    width: 300px; 
+    background: none; 
+    border-bottom: 2px solid #C9C9C9;
+    margin: 5px;
+    transition: border 0.2s;
+    } 
+   
+textarea { 
+    width: 300px; 
+    max-width: 300px; 
+    max-height: 300px;
+    height: 150px; 
+    border: 0;
+    border-bottom: 2px solid #C9C9C9;
+    font-family: inherit;
+    } 
+   
+input:focus, textarea:focus { 
+    border: 0;
+    border-bottom: 2px solid #e67e22; 
 }

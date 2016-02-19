@@ -1,5 +1,5 @@
 body {
-	padding-top: 70px;
+	padding-top: 80px;
 }
 input, textarea { 
     padding: 8px; 
@@ -10,17 +10,18 @@ input, textarea {
     border-bottom: 2px solid #C9C9C9;
     margin: 3px;
     transition: border 0.2s;
-    } 
+} 
    
 textarea { 
     width: 350px; 
     max-width: 350px; 
-    max-height: 300px;
+    max-height: 150px;
     height: 150px; 
     border: 0;
     border-bottom: 2px solid #C9C9C9;
     font-family: inherit;
-    } 
+    resize: none;
+} 
    
 input:focus, textarea:focus { 
     border: 0;
@@ -28,7 +29,7 @@ input:focus, textarea:focus {
 }
 .verstuur:hover {
 	border: 0;
-    border-bottom: 2px solid #e67e22; 
+    border: 2px solid #e67e22; 
     }
 .photo, .photo:hover, .photo:focus {
 	border: none;
@@ -41,10 +42,12 @@ form {
 	margin: auto;
 	padding-top: 20px;
 	border: 0.2px solid #C9C9C9;
-	}
+}
 .verstuur {
 	width: 100px;
 	float: left;
 	margin-left: 30px;
-	}
+	margin-top: 10px;
+	border: 2px solid  #C9C9C9;
+}
 

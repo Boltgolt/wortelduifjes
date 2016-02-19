@@ -47,7 +47,8 @@
 			<h1>Emma Engels</h1>
 			<h2>Kapitein</h2>
 			<h2>HTML &#38; CSS</h2>
-			<p>Emma</p>
+			<p>Ik zorg voor de vrouwelijke input in dit team. Zo bedenk ik een design en schrijf dit in html en css.
+			Mijn <strong>functie</strong> is hier dus erg van belang. Ik heb een jaar ervaring met deze talen</p>
 			<img src="static/images/emma.jpg" alt="Emma">
 		</div>
 	</div>

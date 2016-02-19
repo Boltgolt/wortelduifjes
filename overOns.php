@@ -13,11 +13,13 @@
 </head>
 <body>
 	<?php require "header.php" ?>
-	<p>
+	<div id="match gevonden">
+		<p>
 	Op Wortelduifjes™ komen de leukeste wiskunde enthousiastelingen elkaar tegen. Hier hebben een aantal
 	mensen voor gezorgd. Ja, wij hebben er voor gezorgt dat u uw <strong>exacte</strong> match vindt of 
 	deze al gevonden heeft.
 	</p>
+	</div>
 
 	<p> Ons team bestaat uit 4 enthausiaste leerlingen die een datingsite moesten maken voor school. Wij
 	zijn: Lem, Jules, Leon en Emma en helpen u graag met het zoeken naar de <strong>exacte</strong> match!

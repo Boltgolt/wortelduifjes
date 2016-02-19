@@ -23,8 +23,8 @@
 		<input name="age" placeholder="Leeftijd"><br />
 		<input name="lookingFor" placeholder="Opzoek naar"><br />
 		<textarea name="description" placeholder="Beschrijving"></textarea><br />
-		Kies een foto:<input name="photo" type="file"><br />
-		<input type="submit" value="Verstuur">
+		Kies een foto:<input class="photo" name="photo" type="file"><br />
+		<input class="verstuur" type="submit" value="Verstuur">
 	</form>
 </body>
 </html>

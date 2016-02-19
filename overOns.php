@@ -19,5 +19,8 @@
 	deze al gevonden heeft.
 	</p>
 
+	<p> Ons team bestaat uit 4 enthausiaste leerlingen die een datingsite moesten maken voor school. Wij
+	zijn: Lem, Jules, Leon en Emma en helpen u graag met het zoeken naar de <strong>exacte</strong> match!
+	</p>
 </body>
 </html>

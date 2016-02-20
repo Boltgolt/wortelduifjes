@@ -58,13 +58,13 @@ body {
 		-webkit-filter: saturate(80%);
 	}
 	10% {
-		-webkit-filter: saturate(100%);
+		-webkit-filter: saturate(120%);
 	}
 	20% {
 		-webkit-filter: saturate(80%);
 	}
 	30% {
-		-webkit-filter: saturate(100%);
+		-webkit-filter: saturate(120%);
 	}
 	40% {
 		-webkit-filter: saturate(80%);
@@ -76,21 +76,27 @@ body {
 
 @keyframes pulse {
 	0% {
+		-webkit-filter: saturate(80%);
 		filter: saturate(80%);
 	}
 	10% {
-		filter: saturate(100%);
+		-webkit-filter: saturate(120%);
+		filter: saturate(120%);
 	}
 	20% {
+		-webkit-filter: saturate(80%);
 		filter: saturate(80%);
 	}
 	30% {
-		filter: saturate(100%);
+		-webkit-filter: saturate(120%);
+		filter: saturate(120%);
 	}
 	40% {
+		-webkit-filter: saturate(80%);
 		filter: saturate(80%);
 	}
 	100% {
+		-webkit-filter: saturate(80%);
 		filter: saturate(80%);
 	}
 }

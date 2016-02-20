@@ -1,5 +1,7 @@
 <div id="header">
-	<img src="static/images/logo.png">
+	<a href="/">
+		<img src="static/images/logo.png">
+	</a>
 	<ul>
 		<a href="/register.php"><li>Registreer</li></a>
 		<a href="/overOns.php"><li>Over ons</li></a>

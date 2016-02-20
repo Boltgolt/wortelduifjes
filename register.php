@@ -11,7 +11,7 @@
 	<link rel="stylesheet" type="text/css" href="static/style/register.css">
 </head>
 <body>
-	<?php require "header.php"; ?>
+	<?php require "include/header.php"; ?>
 	<?php if (!empty($_GET["error"])): ?>
 		<h1><?= $_GET["error"] ?></h1>
 	<?php endif; ?>

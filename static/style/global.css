@@ -18,7 +18,7 @@ body {
 	left: 0;
 }
 
-#header > img{
+#header > a:first-child img{
 	position: absolute;
 	left: 10px;
 	height: 50px;

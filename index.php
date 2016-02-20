@@ -40,7 +40,7 @@
 	<link rel="stylesheet" type="text/css" href="static/style/index.css">
 </head>
 <body>
-	<?php require "header.php" ?>
+	<?php require "include/header.php" ?>
 	<div id="landingBack">
 		<span>Zoek je <strong>exacte</strong> match</span>
 		<a href="/register.php"><button>Registreer nu</button></a>

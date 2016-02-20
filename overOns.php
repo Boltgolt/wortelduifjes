@@ -12,7 +12,7 @@
 	<link rel="stylesheet" type="text/css" href="static/style/overOns.css">
 </head>
 <body>
-	<?php require "header.php" ?>
+	<?php require "include/header.php" ?>
 	<div>
 		<div id="lem">
 			<h1>Lem Maria Hendriksen Severein</h1>
@@ -35,7 +35,7 @@
 			<h2>Majoor</h2>
 			<h2>HTML &#38; CSS</h2>
 			<p>
-				Ik ben de HTML en CSS expert van deze website. Ik heb ruim &#233&#233n jaar aan ervaring 
+				Ik ben de HTML en CSS expert van deze website. Ik heb ruim &#233&#233n jaar aan ervaring
 				met deze talen en border-radius is mijn expertise.
 			</p>
 			<p>
@@ -54,4 +54,3 @@
 	</div>
 </body>
 </html>
-

@@ -1,40 +1,35 @@
 body {
 	padding-top: 80px;
 }
-input, textarea { 
-    padding: 8px; 
-    border: 0; 
-    outline: 0;  
-    width: 350px; 
-    background: none; 
-    border-bottom: 2px solid #C9C9C9;
-    margin: 3px;
-    transition: border 0.2s;
-} 
-   
-textarea { 
-    width: 350px; 
-    max-width: 350px; 
-    max-height: 150px;
-    height: 150px; 
-    border: 0;
-    border-bottom: 2px solid #C9C9C9;
-    font-family: inherit;
-    resize: none;
-} 
-   
-input:focus, textarea:focus { 
-    border: 0;
-    border-bottom: 2px solid #e67e22; 
-}
-.verstuur:hover {
+
+input, textarea {
+	padding: 8px;
 	border: 0;
-    border: 2px solid #e67e22; 
-    }
-.photo, .photo:hover, .photo:focus {
-	border: none;
+	outline: 0;
+	width: 350px;
+	background: none;
+	border-bottom: 2px solid #C9C9C9;
+	margin: 3px;
+	transition: border 0.2s;
 }
-form {
+
+textarea {
+	width: 350px;
+	max-width: 350px;
+	max-height: 150px;
+	height: 150px;
+	border: 0;
+	border-bottom: 2px solid #C9C9C9;
+	font-family: inherit;
+	resize: none;
+}
+
+input:focus, textarea:focus {
+	border: 0;
+	border-bottom: 2px solid #e67e22;
+}
+
+body > div:last-child {
 	background-color: none;
 	width: 430px;
 	height: 550px;
@@ -43,7 +38,8 @@ form {
 	padding-top: 20px;
 	border: 0.2px solid #C9C9C9;
 }
-.verstuur {
+
+button {
 	width: 100px;
 	float: left;
 	margin-left: 30px;
@@ -51,3 +47,12 @@ form {
 	border: 2px solid  #C9C9C9;
 }
 
+
+button:hover {
+	border: 0;
+	border: 2px solid #e67e22;
+}
+
+.hide {
+	display: none;
+}

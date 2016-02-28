@@ -2,9 +2,10 @@
 	require "../include/database.php";
 	require "../include/strings.php";
 
+	header("Content-Type: application/json");
+
 	function abort($reason) {
-		header("Location: /register.php?error=" . urlencode($reason));
-		die();
+		die('{"succes": false, "error": "' . $reason . '"}');
 	}
 
 	// TODO: naam, leeftijd validatie. wachtwoord sterkte.
@@ -49,10 +50,6 @@
 		abort("Dat emailadres is niet correct");
 	}
 
-	if (strlen($_POST["color"]) > 20) {
-		abort("Een kleur is maximaal 20 tekens lang");
-	}
-
 	if (strlen($_POST["description"]) > 300) {
 		abort("Een beschrijving is maximaal 300 tekens lang");
 	}
@@ -78,7 +75,7 @@
 		abort("Fout tijdens opslaan foto");
 	}
 
-	header("Location: /profile.php?id=" . mysqli_insert_id($mysqli), true, 302);
+	print '{"succes": true, "id": "' . mysqli_insert_id($mysqli) . '"}';
 
 	session_start();
 	$_SESSION["id"] = mysqli_insert_id($mysqli);

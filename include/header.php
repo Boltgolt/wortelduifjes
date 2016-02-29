@@ -10,7 +10,7 @@
 			die("Niet bestaand profiel");
 			// TODO: niet die pleas
 		}
-		$user = mysqli_fetch_assoc($query)
+		$user = mysqli_fetch_assoc($query);
 	}
 ?>
 <div id="header">

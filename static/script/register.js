@@ -9,7 +9,7 @@ window.addEventListener("load", function() {
 				var resp = JSON.parse(xhttp.responseText)
 
 				if (resp.succes) {
-					 window.location.href = "/profile.php?id=" + resp.id
+					window.location.href = "/profile.php?id=" + resp.id
 				}
 				else {
 					alert(resp.error)

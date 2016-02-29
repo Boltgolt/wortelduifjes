@@ -62,6 +62,12 @@
 		abort("Een foto moet een afbeelding zijn");
 	}
 
+	$query = mysqli_query($mysqli, "SELECT * FROM users WHERE email='" . mysqli_escape_string($mysqli, $_POST["email"]) . "'");
+
+	if (mysqli_num_rows($query) != 1) {
+		abort("Dat emailadres is al geregistreerd");
+	}
+
 	$query = mysqli_query($mysqli, "INSERT INTO users (id, firstName, lastName, email, regDate, age, lookingFor, description, hash) VALUES (DEFAULT, '"
 		. mysqli_escape_string($mysqli, $_POST["firstName"]) . "', '" . mysqli_escape_string($mysqli, $_POST["lastName"]) . "', '" . mysqli_escape_string($mysqli, $_POST["email"])
 		. "', '" . time() . "', '" . mysqli_escape_string($mysqli, $_POST["age"]) . "', '"

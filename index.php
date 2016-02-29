@@ -1,6 +1,7 @@
 <?php
 	require "include/database.php";
 	require "include/strings.php";
+	session_start();
 ?>
 <!DOCTYPE html>
 <html>

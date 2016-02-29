@@ -1,26 +1,24 @@
 <?php
 	require "../include/database.php";
 	require "../include/strings.php";
+	session_start();
 
-	if (empty($_POST["email"]) && empty($_POST["password"])) {
-		header("Location: /", true, 302);
-		die();
+	if (empty($_POST["email"]) || empty($_POST["password"])) {
+		die("01");
 	}
 
 	$query = mysqli_query($mysqli, "SELECT * FROM users WHERE email='" . mysqli_escape_string($mysqli, $_POST["email"]) . "'");
 
 	if (mysqli_num_rows($query) != 1) {
-		header("Location: /", true, 302);
-		die();
+		die("02");
 	}
 
 	$user = mysqli_fetch_array($query);
 
 	if ($user["hash"] != md5($_POST["password"])) {
-		header("Location: /", true, 302);
-		die();
+		die($user["hash"] . "03" . md5($_POST["password"]));
 	}
 
-	session_start();
 	$_SESSION["id"] = $user["id"];
+	die("ok:" . $user["id"]);
 ?>

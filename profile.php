@@ -1,6 +1,8 @@
 <?php
 	require "include/database.php";
 	require "include/strings.php";
+	session_start();
+	
 	$query = mysqli_query($mysqli, "SELECT * FROM users WHERE id='" . mysqli_escape_string($mysqli, $_GET["id"]) . "'");
 	if (!$query) {
 		die("MySQL fout");

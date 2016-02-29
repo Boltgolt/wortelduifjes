@@ -12,9 +12,7 @@
 		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
 	</head>
 	<body>
-		<?php require "header.php"; ?>
-		<?php if (!empty($_GET["error"])): ?>
-			<h1><?= $_GET["error"] ?></h1>
+		<?php require "include/header.php"; ?>
 		<?php endif; ?>
 		<h1>Neem contact met ons op</h1>
 		<h2>Via de onderstaande manieren kunt u contact met ons opnemen. Wij hebben een 24/7 mail en bel service die altijd offline is en we zijn niet bereikbaar via Twitter of Skype.</h2>

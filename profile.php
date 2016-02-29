@@ -1,17 +1,13 @@
 <?php
 	require "include/database.php";
 	require "include/strings.php";
-
 	$query = mysqli_query($mysqli, "SELECT * FROM users WHERE id='" . mysqli_escape_string($mysqli, $_GET["id"]) . "'");
-
 	if (!$query) {
 		die("MySQL fout");
 	}
-
 	if (mysqli_num_rows($query) == 0) {
 		die("Niet bestaand profiel");
 	}
-
 	$user = mysqli_fetch_assoc($query)
 ?>
 <!DOCTYPE html>
@@ -33,7 +29,7 @@
 		Is <?= $user["age"] ?> weken geleden geoogst
 	</p>
 	<code>
-		<?= $user["description"] ?>
+		<?= nl2br($user["description"]) ?>
 	</code>
 
 </body>

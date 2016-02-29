@@ -13,7 +13,6 @@
 	</head>
 	<body>
 		<?php require "include/header.php"; ?>
-		<?php endif; ?>
 		<h1>Neem contact met ons op</h1>
 		<h2>Via de onderstaande manieren kunt u contact met ons opnemen. Wij hebben een 24/7 mail en bel service die altijd offline is en we zijn niet bereikbaar via Twitter of Skype.</h2>
 			<div id="main">

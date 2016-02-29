@@ -49,7 +49,7 @@
 		<div data-200-bottom="opacity: 0" data--100-bottom="opacity: 1">
 			<img src="static/images/randomMath.png">
 			<p data-200-bottom="margin-top: 50px;" data--300-bottom="margin-top: 170px;">
-				Op Wortelduifjes™ komen de leukeste wiskunde enthousiastelingen elkaar tegen
+				Op Wortelduifjes™ komen de leukste wiskunde enthousiastelingen elkaar tegen
 			</p>
 		</div>
 	</div>

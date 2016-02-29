@@ -1,5 +1,5 @@
 <?php
-	if(!empty($_SESSION["id"]) {
+	if(!empty($_SESSION["id"])) {
 		require "include/database.php";
 		require "include/strings.php";
 		$query = mysqli_query($mysqli, "SELECT * FROM users WHERE id='" . mysqli_escape_string($mysqli, $_SESSION["id"]) . "'");

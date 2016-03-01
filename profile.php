@@ -22,13 +22,10 @@
 	<img src="/photos/<?= $user["id"] ?>" height="100" width="100"><br />
 	<small>Geregistreerd op <?= date("Y-m-d H:i:s", $user["regDate"]) ?></small>
 	<p>
-		Kleur: <?= $user["color"] ?>
-	</p>
-	<p>
 		Zoekt naar: <?= $user["lookingFor"] ?>
 	</p>
 	<p>
-		Is <?= $user["age"] ?> weken geleden geoogst
+		Is <?= $user["age"] ?> jaar oud.
 	</p>
 	<code>
 		<?= nl2br($user["description"]) ?>

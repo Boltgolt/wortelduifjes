@@ -32,21 +32,25 @@ input:focus, textarea:focus {
 body > div:last-child {
 	background-color: none;
 	width: 430px;
-	height: 550px;
+	height: 690px;
 	text-align: center;
 	margin: auto;
 	padding-top: 20px;
 	border: 0.2px solid #C9C9C9;
+	margin-bottom: 20px;
 }
 
 button {
-	width: 100px;
-	float: left;
 	margin-left: 30px;
 	margin-top: 10px;
-	border: 2px solid  #C9C9C9;
+	display: block;
+	cursor: pointer;
+	width: 368px;
+	border: 0px none;
+	background: #e67e22;
+	height: 35px;
+	color: white;
 }
-
 
 button:hover {
 	border: 0;
@@ -55,4 +59,39 @@ button:hover {
 
 .hide {
 	display: none;
+}
+
+#photoContainer {
+	height: 200px;
+	width: 200px;
+	border-radius: 200px;
+	margin: auto;
+	overflow: hidden;
+	display: block;
+	cursor: pointer;
+	margin-bottom: 15px;
+	position: relative;
+}
+
+#photoContainer div, #photoPre {
+	position: absolute;
+	height: 200px;
+	width: 200px;
+	top: 0;
+	left: 0;
+}
+
+#photoContainer div {
+	background: rgba(0, 0, 0, .35);
+	color: white;
+	text-align: center;
+	line-height: 200px;
+	font-size: 24px;
+	text-shadow: 0px 0px 5px rgba(0, 0, 0, .2);
+	opacity: 0;
+	transition: opacity .2s;
+}
+
+#photoContainer.chosen div:hover {
+	opacity: 1;
 }

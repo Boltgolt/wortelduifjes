@@ -16,6 +16,11 @@
 <body>
 	<?php require "include/header.php"; ?>
 	<div>
+		<label for="photo" id="photoContainer">
+			<input name="photo" id="photo" type="file" class="hide">
+			<img id="photoPre" src="static/images/noPhotoRegister.png">
+			<div>Kies een foto</div>
+		</label>
 		<input id="firstName" placeholder="Voornaam" class=""><br />
 		<input id="lastName" placeholder="Achternaam"><br />
 		<input id="password" placeholder="Wachtwoord" type="password"><br />
@@ -23,12 +28,8 @@
 		<input id="age" placeholder="Leeftijd"><br />
 		<input id="lookingFor" placeholder="Opzoek naar"><br />
 		<textarea id="description" placeholder="Beschrijving"></textarea><br />
-		<label for="photo">
-			<input name="photo" id="photo" type="file" class="hide">
-			<img id="photoPre" src="static/images/noPhoto.png">
-			Kies een foto
-		</label>
-		<button id="registerButton">verstuur</button>
+
+		<button id="registerButton">Registreer</button>
 	</div>
 </body>
 </html>

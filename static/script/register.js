@@ -1,19 +1,32 @@
 window.addEventListener("load", function() {
+	var busy = false
 	document.getElementById("registerButton").addEventListener("click", function() {
 		var inputs = ["firstName", "lastName", "password", "email", "age", "lookingFor"]
 		var formData = new FormData()
 		var xhttp = new XMLHttpRequest()
+
+		if (busy) {
+			return
+		}
+
+
+		document.getElementById("registerButton").innerHTML = "<i class='fa fa-circle-o-notch fa-spin'></i>"
+		busy = true
 
 		xhttp.onreadystatechange = function() {
 			if (xhttp.readyState == 4 && xhttp.status == 200) {
 				var resp = JSON.parse(xhttp.responseText)
 
 				if (resp.succes) {
+					document.getElementById("registerButton").innerHTML = "<i class='fa fa-check'></i>"
 					window.location.href = "/profile.php?id=" + resp.id
 				}
 				else {
+					document.getElementById("registerButton").innerHTML = "Registreer"
 					alert(resp.error)
 				}
+
+				busy = false
 			}
 		}
 
@@ -36,6 +49,7 @@ window.addEventListener("load", function() {
 
 			reader.onload = function (event) {
 				document.getElementById("photoPre").src = event.target.result
+				document.getElementById("photoContainer").className = "chosen"
 			}
 
 			reader.readAsDataURL(input.files[0]);

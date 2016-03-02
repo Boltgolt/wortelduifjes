@@ -11,6 +11,7 @@ input, textarea {
 	border-bottom: 2px solid #C9C9C9;
 	margin: 3px;
 	transition: border 0.2s;
+	font-size: 16px;
 }
 
 textarea {
@@ -32,12 +33,16 @@ input:focus, textarea:focus {
 body > div:last-child {
 	background-color: none;
 	width: 430px;
-	height: 690px;
+	height: 865px;
 	text-align: center;
 	margin: auto;
 	padding-top: 20px;
 	border: 0.2px solid #C9C9C9;
 	margin-bottom: 20px;
+}
+
+body > div:last-child > img {
+	margin-top: 20px;
 }
 
 button {

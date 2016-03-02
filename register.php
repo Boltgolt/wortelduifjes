@@ -25,9 +25,12 @@
 		<input id="lastName" placeholder="Achternaam"><br />
 		<input id="password" placeholder="Wachtwoord" type="password"><br />
 		<input id="email" placeholder="Email" type="email"><br />
-		<input id="age" placeholder="Leeftijd"><br />
+		<input id="age" placeholder="Leeftijd" type="number"><br />
 		<input id="lookingFor" placeholder="Opzoek naar"><br />
 		<textarea id="description" placeholder="Beschrijving"></textarea><br />
+
+		<img src="/securimage/securimage_show.php">
+		<input id="captcha" placeholder="Wat is de oplossing op de som hierboven?" type="number"><br />
 
 		<button id="registerButton">Registreer</button>
 	</div>

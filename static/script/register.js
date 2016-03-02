@@ -1,7 +1,7 @@
 window.addEventListener("load", function() {
 	var busy = false
 	document.getElementById("registerButton").addEventListener("click", function() {
-		var inputs = ["firstName", "lastName", "password", "email", "age", "lookingFor"]
+		var inputs = ["firstName", "lastName", "password", "email", "age", "lookingFor", "captcha"]
 		var formData = new FormData()
 		var xhttp = new XMLHttpRequest()
 

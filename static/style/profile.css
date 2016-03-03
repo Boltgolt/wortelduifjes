@@ -3,5 +3,9 @@ body {
 	text-align: center;
 }
 img {
+	width: 190px;
 	position: absolute;
+	bottom: 0px;
+	left: 210px;
+	z-index: -1;
 }

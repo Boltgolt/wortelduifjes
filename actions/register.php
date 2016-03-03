@@ -84,7 +84,7 @@
 	require "../securimage/securimage.php";
 	$securimage = new Securimage();
 
-	if (!$securimage->check($_POST["captcha"])) {
+	if ($securimage->check($_POST["captcha"]) == false) {
 		abort("Dat is niet de correcte oplossing voor de som");
 	}
 

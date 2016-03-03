@@ -25,7 +25,7 @@
 <body>
 	<?php require "include/header.php" ?>
 	<h1><?= $user["firstName"] ?> <?= $user["lastName"] ?></h1>
-	<img src="/photos/<?= $user["id"] ?>" height="100" width="100"><br />
+	<img src="/photos/<?= $user["id"] ?>" ><br />
 	<small>Geregistreerd op <?= date("Y-m-d H:i:s", $user["regDate"]) ?></small>
 	<p>
 		Zoekt naar: <?= $user["lookingFor"] ?>

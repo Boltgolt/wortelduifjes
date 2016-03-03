@@ -69,7 +69,7 @@
 		abort("Een leeftijd is verplicht");
 	}
 
-	if (is_numeric($_POST["age"])) {
+	if (!is_numeric($_POST["age"])) {
 		abort("Een leeftijd is een nummer");
 	}
 

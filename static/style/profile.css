@@ -5,5 +5,5 @@ body {
 img {
 	height: 250px;
 	width:250px;
-	float: left;
+	border: 3px solid #C9C9C9;
 }

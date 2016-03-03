@@ -98,7 +98,7 @@
 
 	$query = mysqli_query($mysqli, "SELECT * FROM users WHERE email='" . mysqli_escape_string($mysqli, $_POST["email"]) . "'");
 
-	if (mysqli_num_rows($query) != 1) {
+	if (mysqli_num_rows($query) > 0) {
 		abort("Dat emailadres is al geregistreerd");
 	}
 

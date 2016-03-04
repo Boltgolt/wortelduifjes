@@ -1,9 +1,12 @@
 body {
 	padding-top: 50px;
-	text-align: center;
+}
+title {
+	float: center;
 }
 body > img {
 	height: 250px;
 	width:250px;
-	border: 2px solid #C9C9C9;
+	float: left;
 }
+

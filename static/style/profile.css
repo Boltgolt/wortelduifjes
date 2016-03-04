@@ -2,11 +2,11 @@ body {
 	padding-top: 50px;
 }
 title {
-	float: center;
+	
 }
 body > img {
 	height: 250px;
 	width:250px;
-	float: left;
+	left: 200px;
 }
 

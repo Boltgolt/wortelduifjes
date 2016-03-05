@@ -12,11 +12,9 @@
 	<script type="text/javascript">
 		window.addEventListener("load", function() {
 			var s = skrollr.init({"forceHeight": false, "smoothScrollingDuration": 50});
-
 			var opp = ["worteltrekken", "differentiëren", "analyseren", "integreren"]
 			var elem = document.getElementById("opp")
 			var index = 0
-
 			setInterval(function () {
 				if (index < opp.length - 1) {
 					index++
@@ -24,9 +22,7 @@
 				else {
 					index = 0
 				}
-
 				elem.style.opacity = 0;
-
 				setTimeout(function () {
 					elem.innerHTML = opp[index];
 					elem.style.opacity = 1;
@@ -44,6 +40,7 @@
 	<?php require "include/header.php" ?>
 	<div id="landingBack">
 		<span>Zoek je <strong>exacte</strong> match</span>
+		<span>Van de <?= SELECT COUNT(*) FROM "users"; ?>
 		<a href="/register.php"><button>Registreer nu</button></a>
 	</div>
 	<div id="explanation">
@@ -76,3 +73,4 @@
 	</div>
 </body>
 </html>
+

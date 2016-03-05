@@ -40,7 +40,7 @@
 	<?php require "include/header.php" ?>
 	<div id="landingBack">
 		<span>Zoek je <strong>exacte</strong> match</span>
-		<span>Van de <?= SELECT COUNT(*) FROM "users"; ?>
+		<span>Van de <?= SELECT COUNT(*) FROM users; ?>
 		<a href="/register.php"><button>Registreer nu</button></a>
 	</div>
 	<div id="explanation">

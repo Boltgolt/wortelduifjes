@@ -41,8 +41,14 @@
 	<div id="landingBack">
 		<span>Zoek je <strong>exacte</strong> match</span>
 		<div id="liefhebbers">
-			<?php $query = mysqli_query($mysqli, "SELECT COUNT(*) AS gebruikers FROM users"); ?> 
-			<p>Uit wel <?= mysqli_fetch_assoc($query)["gebruikers"]; ?> wiskundeliefhebbers!</p>
+			if (empty($_SESSION["id"])) {
+				<?php $query = mysqli_query($mysqli, "SELECT COUNT(*) AS gebruikers FROM users"); ?> 
+				<p>Uit wel <?= mysqli_fetch_assoc($query)["gebruikers"] - 1; ?> wiskundeliefhebbers!</p>
+			}
+			else {
+				<?php $query = mysqli_query($mysqli, "SELECT COUNT(*) AS gebruikers FROM users"); ?> 
+				<p>Uit wel <?= mysqli_fetch_assoc($query)["gebruikers"]; ?> wiskundeliefhebbers!</p>
+			{
 		</div>
 		<a href="/register.php"><button>Registreer nu</button></a>
 	</div>

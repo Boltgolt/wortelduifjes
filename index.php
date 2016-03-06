@@ -46,7 +46,7 @@
 				<p>Uit wel <?= mysqli_fetch_assoc($query)["gebruikers"] - 1; ?> wiskundeliefhebbers!</p>
 			<?php else: ?>
 				<?php $query = mysqli_query($mysqli, "SELECT COUNT(*) AS gebruikers FROM users"); ?>
-				print <p>Uit wel <?= mysqli_fetch_assoc($query)["gebruikers"]; ?> wiskundeliefhebbers!</p>
+				<p>Uit wel <?= mysqli_fetch_assoc($query)["gebruikers"]; ?> wiskundeliefhebbers!</p>
 			<?php endif; ?>
 		</div>
 		<a href="/register.php"><button>Registreer nu</button></a>

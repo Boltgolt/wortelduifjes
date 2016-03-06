@@ -41,7 +41,7 @@
 	<div id="landingBack">
 		<span>Zoek je <strong>exacte</strong> match</span>
 		<?php $query = mysqli_query($mysqli, "SELECT COUNT(*) AS gebruikers FROM users"); ?> 
-		<span>Uit minstens <?= mysqli_fetch_assoc($query)["gebruikers"]; ?> wiskundeliefhebbers!</span>
+		<span>Uit wel <?= mysqli_fetch_assoc($query)["gebruikers"]; ?> wiskundeliefhebbers!</span>
 		<a href="/register.php"><button>Registreer nu</button></a>
 	</div>
 	<div id="explanation">

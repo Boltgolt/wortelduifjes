@@ -40,18 +40,14 @@
 	<?php require "include/header.php" ?>
 	<div id="landingBack">
 		<span>Zoek je <strong>exacte</strong> match</span>
-			if (empty($_SESSION["id"])) {
-				<div id="liefhebbers">
-					<?php $query = mysqli_query($mysqli, "SELECT COUNT(*) AS gebruikers FROM users"); ?> 
-					<p>Uit wel <?= mysqli_fetch_assoc($query)["gebruikers"] - 1; ?> wiskundeliefhebbers!</p>
-				</div>
-			}
-			else {
-				<div id="liefhebbers">
-					<?php $query = mysqli_query($mysqli, "SELECT COUNT(*) AS gebruikers FROM users"); ?> 
-					<p>Uit wel <?= mysqli_fetch_assoc($query)["gebruikers"]; ?> wiskundeliefhebbers!</p>
-				</div>
-			{
+		<div id="liefhebbers">
+			<?php if (empty($_SESSION["id"])): ?>
+				<?php $query = mysqli_query($mysqli, "SELECT COUNT(*) AS gebruikers FROM users"); ?>
+				<p>Uit wel <?= mysqli_fetch_assoc($query)["gebruikers"] - 1; ?> wiskundeliefhebbers!</p>
+			<?php else: ?>
+				<?php $query = mysqli_query($mysqli, "SELECT COUNT(*) AS gebruikers FROM users"); ?>
+				print <p>Uit wel <?= mysqli_fetch_assoc($query)["gebruikers"]; ?> wiskundeliefhebbers!</p>
+			<?php endif; ?>
 		</div>
 		<a href="/register.php"><button>Registreer nu</button></a>
 	</div>

@@ -40,8 +40,8 @@
 	<?php require "include/header.php" ?>
 	<div id="landingBack">
 		<span>Zoek je <strong>exacte</strong> match</span>
-		<span>Van de <?php $query = mysqli_query($mysqli, "SELECT COUNT(*) AS gebruikers FROM users"); ?>
-		<?=	mysql_fetch_assoc($query)["gebruikers"]; ?>
+		<?php $query = mysqli_query($mysqli, "SELECT COUNT(*) AS gebruikers FROM users"); ?> 
+		<span>Van de <?= mysqli_fetch_assoc($mysqli, $query)["gebruikers"]; ?> wiskundeliefhebbers!</span>
 		<a href="/register.php"><button>Registreer nu</button></a>
 	</div>
 	<div id="explanation">

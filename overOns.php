@@ -26,7 +26,9 @@
 			<h1>Leon Ras</h1>
 			<h2>Kolonel</h2>
 			<h2>Javascript &#38; PHP</h2>
-			<p>Dit is een beschrijving van Leon</p>
+			<p>Al van kinds af aan had ik bewondering voor talen als javascript en php,
+			dus wanneer ik hoorde dat ik aan de php van wortelduifjes mocht werken met de legende Lem Severein
+			was ik gelijk verkocht.</p>
 			<img src="static/images/leon.jpg" alt="Leon ras">
 		</div>
 	</div>

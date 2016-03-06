@@ -28,8 +28,9 @@ body {
 	text-shadow: 2px 1px 6px rgba(0, 0, 0, 0.6);
 }
 
-#liefhebbers {
+#liefhebbers p {
 	font-size:40px;
+	font-weight: lighter;
 }
 
 #landingBack span strong {

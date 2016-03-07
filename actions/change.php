@@ -24,49 +24,50 @@
 		}
 	}
 	
-
+	if ($_POST["changeField"] == "lastName") {
 	
-	if (strlen($_POST["lastName"]) > 100) {
+		if (strlen($_POST["value"]) > 100) {
 		abort("Een achternaam is maximaal 100 tekens lang");
-	}
+		}
 	
-	if (!ctype_alpha($_POST["lastName"])) {
+		if (!ctype_alpha($_POST["value"])) {
 		abort("Een achternaam kan alleen uit letters bestaan");
+		}
 	}
 	
+	if ($_POST["changeField"] == "password") {
+	
+		if (strlen($_POST["value"]) < 6) {
+			abort("Een wachtwoord is minimaal 6 tekens lang");
+		}
+	
+		if (strlen($_POST["value"]) > 20) {
+			abort("Een wachtwoord is maximaal 20 tekens lang");
+		}
+	
+		if (!preg_match("/[0-9]/", $_POST["value"])) {
+			abort("Een wachtwoord heeft ten minste 1 nummer");
+		}
+	
+		if (!preg_match("/[A-Z]/", $_POST["value"])) {
+			abort("Een wachtwoord heeft ten minste 1 hoofdletter");
+		}
+	}
+	
+	if ($_POST["changeField"] == "age") {
 
-	
-	if (strlen($_POST["password"]) < 6) {
-		abort("Een wachtwoord is minimaal 6 tekens lang");
+		if (!is_numeric($_POST["value"])) {
+			abort("Een leeftijd is een nummer");
+		}
 	}
 	
-	if (strlen($_POST["password"]) > 20) {
-		abort("Een wachtwoord is maximaal 20 tekens lang");
-	}
+	if ($_POST["changeField"] == "description") {
 	
-	if (!preg_match("/[0-9]/", $_POST["password"])) {
-		abort("Een wachtwoord heeft ten minste 1 nummer");
+		if (strlen($_POST["value"]) > 2000) {
+			abort("Een beschrijving is maximaal 2000 tekens lang");
+		}
 	}
-	
-	if (!preg_match("/[A-Z]/", $_POST["password"])) {
-		abort("Een wachtwoord heeft ten minste 1 hoofdletter");
-	}
-
-
-	
-	if (!is_numeric($_POST["age"])) {
-		abort("Een leeftijd is een nummer");
-	}
-	
-	if (strlen($_POST["description"]) > 2000) {
-		abort("Een beschrijving is maximaal 2000 tekens lang");
-	}
-	
-	$user = mysqli_fetch_array($query);
-	if ($user["hash"] != md5($_POST["password"])) {
-		die();
-	}
-	
-	$_SESSION["id"] = $user["id"];
-	die("ok:" . $user["id"]);
+	$query = mysqli_query($mysqli, "UPDATE users SET " . $_POST["changefield"] . 
+	"='" . mysqli_escape_string($mysqli, htmlspecialchars($_POST["value"])) . "' WHERE id=" . $_SESSION["id"];
+		
 ?>

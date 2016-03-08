@@ -36,7 +36,7 @@ small {
 	font-size: 22px;
 	cursor: pointer;
 	text-shadow: 2px 1px 6px rgba(0, 0, 0, 0.6);
-	margin-left: 10px;
+	margin-left: 25px;
 	box-shadow: 2px 1px 6px 0px rgba(0, 0, 0, 0.6), 2px 1px 6px 0px rgba(0, 0, 0, 0.6) inset;
 	transition: padding .2s, font .2s;
 	font-weight: lighter;

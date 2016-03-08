@@ -49,7 +49,11 @@
 				<p>Uit wel <?= mysqli_fetch_assoc($query)["gebruikers"]; ?> wiskundeliefhebbers!</p>
 			<?php endif; ?>
 		</div>
-		<a href="/register.php"><button>Registreer nu</button></a>
+		<?php if (!empty($_SESSION["id"])): ?>
+			<a href="/register.php"><button>Ontdek de y van jouw x</button></a>
+		<?php else: ?>
+			<a href="/register.php"><button>Registreer nu</button></a>
+		<?php endif; ?>
 	</div>
 	<div id="explanation">
 		<div data-200-bottom="opacity: 0" data--100-bottom="opacity: 1">

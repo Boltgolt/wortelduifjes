@@ -27,8 +27,8 @@
 <body>
 	<?php require "include/header.php" ?>
 	<div id="profName">
-		<h4><?= $randUser["firstName"] ?></h4>
-		<h4><?= $randUser["lastName"] ?></h4>
+		<h4><?= $randUser["firstName"] ?>
+		<?= $randUser["lastName"] ?></h4>
 	</div>
 	<br>
 	<img src="/photos/<?= $randUser["id"] ?>">

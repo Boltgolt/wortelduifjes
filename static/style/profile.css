@@ -26,4 +26,17 @@ small {
 	margin-top: -110px;
 	margin-left: 400px;
 }
-
+#differentieer {
+	display: inline-block;
+	border: 3px solid #ffb033;
+	background: none;
+	color: #ffb033;
+	font-weight: normal;
+	padding: 15px;
+	font-size: 22px;
+	cursor: pointer;
+	text-shadow: 2px 1px 6px rgba(0, 0, 0, 0.6);
+	margin-top: 10vh;
+	box-shadow: 2px 1px 6px 0px rgba(0, 0, 0, 0.6), 2px 1px 6px 0px rgba(0, 0, 0, 0.6) inset;
+	transition: padding .2s, font .2s;
+}

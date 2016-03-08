@@ -27,5 +27,6 @@
 <body>
 	<?php require "include/header.php" ?>
 	<?= $randUser["firstName"] ?>
+	<button onclick="location.reload()">Differentieer</button>
 </body>
 </html>

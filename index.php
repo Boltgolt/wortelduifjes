@@ -50,7 +50,7 @@
 			<?php endif; ?>
 		</div>
 		<?php if (!empty($_SESSION["id"])): ?>
-			<a href="/register.php"><button>Ontdek de y van jouw x</button></a>
+			<a href="/magic.php"><button>Ontdek de y van jouw x</button></a>
 		<?php else: ?>
 			<a href="/register.php"><button>Registreer nu</button></a>
 		<?php endif; ?>
@@ -76,7 +76,7 @@
 		<div>
 			Stop met <span id="opp">worteltrekken</span>, 
 			<?php if (!empty($_SESSION["id"])): ?>
-				<a href="/register.php">Ontdek de y van jouw x</a>
+				<a href="/magic.php">Ontdek de y van jouw x</a>
 			<?php else: ?>
 				<a href="/register.php">Registreer nu</a>
 			<?php endif; ?>.

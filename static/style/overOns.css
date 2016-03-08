@@ -1,6 +1,6 @@
 body {
 	margin-top: 80px;
-	background-color: #ecf0f1; 
+	background-color: #ecf0f1;
 }
 #leon, #emma {
 	float: right;
@@ -44,4 +44,26 @@ h2 {
 	bottom: 0px;
 	left: 150px;
 	z-index: -1;
+}
+
+#lem {
+	overflow: hidden;
+}
+
+#lem img {
+	z-index: 2;
+}
+
+#lem > video {
+	position: absolute;
+	z-index: -20;
+	opacity: .3;
+	left: -210px;
+	height: 430px;
+}
+
+#lem p > video {
+	width: 360px;
+	position: relative;
+	z-index: 0
 }

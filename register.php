@@ -19,7 +19,7 @@
 		<label for="photo" id="photoContainer">
 			<input name="photo" id="photo" type="file" class="hide">
 			<img id="photoPre" src="static/images/noPhotoRegister.png">
-			<div>Kies een foto</div>
+			<div>Verander foto</div>
 		</label>
 		<input id="firstName" placeholder="Voornaam" class=""><br />
 		<input id="lastName" placeholder="Achternaam"><br />
@@ -29,7 +29,7 @@
 		<input id="lookingFor" placeholder="Opzoek naar"><br />
 		<textarea id="description" placeholder="Beschrijving"></textarea><br />
 
-		<img src="/securimage/securimage_show.php">
+		<img src="/securimage/securimage_show.php"><br />
 		<input id="captcha" placeholder="Wat is de oplossing op de som hierboven?" type="number"><br />
 
 		<button id="registerButton">Registreer</button>

@@ -26,19 +26,6 @@ small {
 	margin-top: -110px;
 	margin-left: 400px;
 }
-#differentieer button {
-	display: inline-block;
-	border: 3px solid #ffb033;
-	border-radius: 20px;
-	background: #ffb033;
-	color: #FFFFFF;
-	font-weight: normal;
-	padding: 15px;
-	font-size: 15px;
-	cursor: pointer;
-	margin-left: 35px;
-	margin-top: 15px;
-}
 #profName {
 	margin-left:10px;
 	margin-top: 20px;

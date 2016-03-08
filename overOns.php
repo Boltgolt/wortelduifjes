@@ -16,11 +16,12 @@
 	<?php require "include/header.php" ?>
 	<div>
 		<div id="lem">
+			<video src="rick.webm" autoplay muted loop></video>
 			<h1>Lem Maria Hendriksen Severein</h1>
 			<h2>Generaal</h2>
 			<h2>Javascript &#38; PHP</h2>
-			<p>Dit is een beschrijving van lem</p>
-			<img src="static/images/lem.jpg" alt="Lem Maria Hendriksen Severein">
+			<p><video src="rick.webm" autoplay loop></video></p>
+			<img src="static/images/lem.png" alt="Lem Maria Hendriksen Severein">
 		</div>
 		<div id="leon">
 			<h1>Leon Ras</h1>

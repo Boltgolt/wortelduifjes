@@ -76,9 +76,9 @@
 		<div>
 			Stop met <span id="opp">worteltrekken</span>, 
 			<?php if (!empty($_SESSION["id"])): ?>
-				<a href="/register.php"><button>Ontdek de y van jouw x</button></a>
+				<a href="/register.php">Ontdek de y van jouw x</a>
 			<?php else: ?>
-				<a href="/register.php"><button>Registreer nu</button></a>
+				<a href="/register.php">Registreer nu</a>
 			<?php endif; ?>.
 		</div>
 	</div>

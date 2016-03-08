@@ -2,12 +2,10 @@ body {
 	padding-top: 50px;
 }
 title {
-	text-align: left;	
 }
 body > img {
 	height: 250px;
 	width:250px;
-	text-align: left;
 }
 body > p {
 	text-align: center;

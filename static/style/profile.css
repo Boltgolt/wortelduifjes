@@ -9,6 +9,7 @@ body > img {
 	height: 250px;
 	width:250px;
 	margin-left: 25px;
+	border-radius: 25px;
 }
 small {
 	margin-left: 25px;

@@ -30,7 +30,6 @@
 		<h4><?= $randUser["firstName"] ?>
 		<?= $randUser["lastName"] ?></h4>
 	</div>
-	<br>
 	<img src="/photos/<?= $randUser["id"] ?>">
 	<br>
 	<div id="differentieer">

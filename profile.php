@@ -33,9 +33,9 @@
 	<div id="leeftijd">
 		Is <?= $user["age"] ?> jaar oud.
 	</div>
-	<code>
+	<div id="beschrijving">
 		<?= nl2br($user["description"]) ?>
-	</code>
+	</div>
 
 </body>
 </html>

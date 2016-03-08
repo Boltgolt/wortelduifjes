@@ -1,18 +1,18 @@
 body {
 	padding-top: 50px;
 }
-title {
+head > title {
 	text-align: center;
 }
 body > img {
 	height: 250px;
 	width:250px;
-	margin-left: 20px;
+	margin-left: 50px;
 }
 #zoekt {
 	text-align: center;
 }
 #leeftijd {
-	
+	margin-left: 50px;
 }
 

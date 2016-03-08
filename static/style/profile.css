@@ -2,10 +2,12 @@ body {
 	padding-top: 50px;
 }
 title {
+	text-align: center;
 }
 body > img {
 	height: 250px;
 	width:250px;
+	position: absolute;
 }
 #zoekt {
 	text-align: center;

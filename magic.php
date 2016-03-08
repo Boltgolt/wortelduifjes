@@ -12,7 +12,7 @@
 	if (mysqli_num_rows($query) == 0) {
 		die("Niet bestaand profiel");
 	}
-	$user = mysqli_fetch_assoc($query)
+	$randUser = mysqli_fetch_assoc($query)
 ?>
 <!DOCTYPE html>
 <html>
@@ -26,6 +26,6 @@
 </head>
 <body>
 	<?php require "include/header.php" ?>
-	<?= $user["firstName"] ?>
+	<?= $randUser["firstName"] ?>
 </body>
 </html>

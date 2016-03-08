@@ -27,6 +27,8 @@
 <body>
 	<?php require "include/header.php" ?>
 	<?= $randUser["firstName"] ?>
+	<?= $randUser["lastName"] ?>
+	<img src="/photos/<?= $randUser["id"] ?>">
 	<button onclick="location.reload()">Differentieer</button>
 </body>
 </html>

@@ -2,11 +2,11 @@ body {
 	padding-top: 50px;
 }
 title {
-	
+	text-align: left;	
 }
 body > img {
 	height: 300px;
 	width:300px;
-	
+	text-align: left;
 }
 

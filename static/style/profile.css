@@ -28,9 +28,9 @@ small {
 }
 #differentieer button {
 	display: inline-block;
-	border: 3px solid #ffb033;
+	border: 3px solid #000000;
 	background: none;
-	color: #ffb033;
+	color: #000000;
 	font-weight: normal;
 	padding: 15px;
 	font-size: 22px;

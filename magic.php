@@ -31,6 +31,8 @@
 	<br>
 	<img src="/photos/<?= $randUser["id"] ?>">
 	<br>
-	<button onclick="location.reload()">Differentieer</button>
+	<div id="differentieer">
+		<button onclick="location.reload()">Differentieer</button>
+	</div>
 </body>
 </html>

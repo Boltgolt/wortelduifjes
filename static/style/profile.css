@@ -29,11 +29,12 @@ small {
 #differentieer button {
 	display: inline-block;
 	border: 3px solid #ffb033;
+	border-radius: 15px;
 	background: #FFF5E6;
 	color: #ffb033;
 	font-weight: normal;
 	padding: 15px;
-	font-size: 22px;
+	font-size: 12px;
 	cursor: pointer;
 	margin-left: 25px;
 	margin-top: 15px;

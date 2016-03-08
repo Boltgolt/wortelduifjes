@@ -34,6 +34,7 @@
 	<br>
 	<div id="differentieer">
 		<button onclick="location.reload()">Differentieer</button>
+		<button onclick="location.reload()">Profiel</button>
 	</div>
 </body>
 </html>

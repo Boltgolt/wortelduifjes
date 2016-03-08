@@ -20,14 +20,8 @@ small {
 	margin-left: 25px;
 }
 #beschrijving {
-	text-align: center;
-	margin: 10px;
-	width: 360px;
-	height: 420px;
-	padding: 0 20px 0 20px;
-	border: 0.2px solid #C9C9C9;
-	background-color: #ecf0f1;
-	z-index: -2;
+	width: 500px;
+	height: 600px;
 	margin-top: -400px;
 	margin-left: 400px;
 }

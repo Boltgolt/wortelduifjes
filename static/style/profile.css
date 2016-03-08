@@ -2,20 +2,20 @@ body {
 	padding-top: 50px;
 }
 head > title {
-	text-align: center;
+	margin-left: 25px;
 }
 body > img {
 	height: 250px;
 	width:250px;
-	margin-left: 50px;
+	margin-left: 25px;
 }
 small {
-	margin-left: 50px;
+	margin-left: 25px;
 }
 #zoekt {
 	text-align: center;
 }
 #leeftijd {
-	margin-left: 50px;
+	margin-left: 25px;
 }
 

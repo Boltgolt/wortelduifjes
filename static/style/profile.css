@@ -41,3 +41,7 @@ small {
 	transition: padding .2s, font .2s;
 	font-weight: lighter;
 }
+#profName {
+	margin-left:25px;
+}
+}

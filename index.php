@@ -74,7 +74,12 @@
 	</div>
 	<div id="hurrytheforkup" data-bottom-top="background-position: 0% 30%;" data-bottom="background-position: 0% 15%;">
 		<div>
-			Stop met <span id="opp">worteltrekken</span>, <a href="/register.php">registreer nu</a>.
+			Stop met <span id="opp">worteltrekken</span>, 
+			<?php if (!empty($_SESSION["id"])): ?>
+				<a href="/register.php"><button>Ontdek de y van jouw x</button></a>
+			<?php else: ?>
+				<a href="/register.php"><button>Registreer nu</button></a>
+			<?php endif; ?>.
 		</div>
 	</div>
 	<div id="footer">

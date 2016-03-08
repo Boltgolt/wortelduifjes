@@ -30,6 +30,7 @@
 	<?= $randUser["lastName"] ?>
 	<br>
 	<img src="/photos/<?= $randUser["id"] ?>">
+	<br>
 	<button onclick="location.reload()">Differentieer</button>
 </body>
 </html>

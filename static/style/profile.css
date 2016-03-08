@@ -11,11 +11,15 @@ body > img {
 }
 small {
 	margin-left: 25px;
+	margin-top: 100px;
 }
 #zoekt {
 	margin-left: 25px;
 }
 #leeftijd {
 	margin-left: 25px;
+}
+code {
+	
 }
 

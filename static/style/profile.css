@@ -1,8 +1,8 @@
 body {
 	padding-top: 50px;
 }
-head > title {
-	margin-left: 25px;
+h1 {
+	text-align: center;
 }
 body > img {
 	height: 250px;

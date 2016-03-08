@@ -27,7 +27,8 @@ small {
 	padding: 0 20px 0 20px;
 	border: 0.2px solid #C9C9C9;
 	position: relative;
-	background-color: #fff;
+	background-color: #ecf0f1;
 	z-index: -2;
+	margin-top: -100px;
 }
 

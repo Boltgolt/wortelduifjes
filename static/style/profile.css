@@ -9,4 +9,7 @@ body > img {
 	width:250px;
 	text-align: left;
 }
+body > p {
+	text-align: center;
+}
 

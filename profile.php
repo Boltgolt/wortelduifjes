@@ -27,12 +27,12 @@
 	<h1><?= $user["firstName"] ?> <?= $user["lastName"] ?></h1>
 	<img src="/photos/<?= $user["id"] ?>" ><br />
 	<small>Geregistreerd op <?= date("Y-m-d H:i:s", $user["regDate"]) ?></small>
-	<p>
+	<div id= "zoekt">
 		Zoekt naar: <?= $user["lookingFor"] ?>
-	</p>
-	<p>
+	</div>
+	<div id="leeftijd">
 		Is <?= $user["age"] ?> jaar oud.
-	</p>
+	</div>
 	<code>
 		<?= nl2br($user["description"]) ?>
 	</code>

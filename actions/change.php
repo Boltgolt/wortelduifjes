@@ -9,7 +9,7 @@
 	
 	$allowedField = ["firstName", "lastName", "age", "lookingFor", "description"];
 	
-	if (!in_array($_POST["changeField"], $alowedField)) {
+	if (!in_array($_POST["changeField"], $allowedField)) {
 	  die();
 	}
 	

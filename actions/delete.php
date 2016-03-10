@@ -8,4 +8,8 @@
 	}
 	
 	$query = mysqli_query($mysqli, "DELETE FROM users WHERE id=" . $_SESSION["id"]);
+	
+	session_destroy();
+	header("Location: /", true, 302);
+	die();
 ?>

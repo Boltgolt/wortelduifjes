@@ -7,7 +7,7 @@
 		die();
 	}
 
-	$query = mysqli_query($mysqli, "SELECT * FROM users ORDER BY RAND() LIMIT 1");
+	$query = mysqli_query($mysqli, "SELECT * FROM users WHERE id <> " . $_SESSION["id"] . " ORDER BY RAND() LIMIT 1");
 
 	if (!$query) {
 		die("MySQL fout");

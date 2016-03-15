@@ -47,9 +47,9 @@
 			<?php else: ?>
 				<?php $query = mysqli_query($mysqli, "SELECT COUNT(*) AS gebruikers FROM users"); ?>
 				<p>Uit wel <?= mysqli_fetch_assoc($query)["gebruikers"]; ?> wiskundeliefhebbers!</p>
+				<p><?php log(mysqli_fetch_assoc($query)["gebruikers"], 2); ?></p>
 			<?php endif; ?>
 		</div>
-		<p><?php log(mysqli_fetch_assoc($query)["gebruikers"], 2); ?></p>
 		<?php if (!empty($_SESSION["id"])): ?>
 			<a href="/magic.php"><button>Ontdek de y van jouw x</button></a>
 		<?php else: ?>

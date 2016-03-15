@@ -49,6 +49,7 @@
 				<p>Uit wel <?= mysqli_fetch_assoc($query)["gebruikers"]; ?> wiskundeliefhebbers!</p>
 			<?php endif; ?>
 		</div>
+		<?php log(mysqli_fetch_assoc($query)["gebruikers"], 2); ?>
 		<?php if (!empty($_SESSION["id"])): ?>
 			<a href="/magic.php"><button>Ontdek de y van jouw x</button></a>
 		<?php else: ?>

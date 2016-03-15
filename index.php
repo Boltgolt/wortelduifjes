@@ -44,11 +44,11 @@
 			<?php if (!empty($_SESSION["id"])): ?>
 				<?php $query = mysqli_query($mysqli, "SELECT COUNT(*) AS gebruikers FROM users"); ?>
 				<p>Uit wel <?= mysqli_fetch_assoc($query)["gebruikers"] - 1; ?> wiskundeliefhebbers!</p>
+				<?= log10(16)/log10(2); ?>
 			<?php else: ?>
 				<?php $query = mysqli_query($mysqli, "SELECT COUNT(*) AS gebruikers FROM users"); ?>
 				<p>Uit wel <?= mysqli_fetch_assoc($query)["gebruikers"]; ?> wiskundeliefhebbers!</p>
 			<?php endif; ?>
-			<?= log10(16)/log10(2); ?>
 		</div>
 		<?php if (!empty($_SESSION["id"])): ?>
 			<a href="/magic.php"><button>Ontdek de y van jouw x</button></a>

@@ -44,7 +44,7 @@
 			<?php if (!empty($_SESSION["id"])): ?>
 				<?php $query = mysqli_query($mysqli, "SELECT COUNT(*) AS gebruikers FROM users"); ?>
 				<p>Uit wel <?= mysqli_fetch_assoc($query)["gebruikers"] - 1; ?> wiskundeliefhebbers!</p>
-				<?= log(mysqli_fetch_assoc($query)["gebruikers"], 2); ?>
+				<?= log(16, 2); ?>
 			<?php else: ?>
 				<?php $query = mysqli_query($mysqli, "SELECT COUNT(*) AS gebruikers FROM users"); ?>
 				<p>Uit wel <?= mysqli_fetch_assoc($query)["gebruikers"]; ?> wiskundeliefhebbers!</p>

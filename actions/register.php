@@ -65,6 +65,10 @@
 		abort("Dat emailadres is niet correct");
 	}
 
+	if(checkdnsrr(explode('@', $_POST["email"])[1], "MX")) {
+		abort("Dit is geen echt email adres");	
+	}
+
 	if (empty($_POST["age"])) {
 		abort("Een leeftijd is verplicht");
 	}

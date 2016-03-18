@@ -1,32 +1,45 @@
 body {
 	padding-top: 60px;
 	background-color: #ecf0f1;
+	text-align: center;
 }
+
 h1 {
 	margin-left: 25px;
 }
+
 body > img {
 	height: 250px;
 	width:250px;
 	margin-left: 25px;
 	border-radius: 50px;
 }
+
 small {
 	margin-left: 25px;
 }
+
 #zoekt {
 	margin-left: 25px;
 }
+
 #leeftijd {
 	margin-left: 25px;
 }
+
 #beschrijving {
-	width: 500px;
-	height: 600px;
-	margin-top: -110px;
-	margin-left: 400px;
+	opacity: .7;
+	font-size: 17px;
+	margin-top: 17px;
 }
+
 #profName {
 	margin-left:10px;
 	margin-top: 20px;
+}
+
+span {
+	color: #e67e22;
+	cursor: pointer;
+	margin-left: 10px;
 }

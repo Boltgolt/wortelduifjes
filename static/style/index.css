@@ -224,4 +224,5 @@ body {
 
 #footer span:last-child {
 	float: right;
+	cursor: pointer;
 }

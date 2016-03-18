@@ -1,0 +1,7 @@
+body > div:last-child {
+	height: 180px;
+}
+
+button {
+	margin-top: 26px;
+}

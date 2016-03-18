@@ -2,7 +2,7 @@ window.addEventListener("load", function() {
 	var working = false
 	document.getElementById("loginButton").disabled = false
 
-	document.getElementById("loginButton").addEventListener("click", function() {
+	function login() {
 		if (working) {
 			return
 		}
@@ -37,5 +37,13 @@ window.addEventListener("load", function() {
 
 		xhttp.open("POST", "actions/login.php", true)
 		xhttp.send(formData)
+	}
+
+	document.getElementById("loginButton").addEventListener("click", function() {login()})
+
+	window.addEventListener("keydown", function(event) {
+		if (event.keyCode == 13) {
+			login()
+		}
 	})
 })

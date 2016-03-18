@@ -19,6 +19,7 @@
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Architects+Daughter|Open+Sans:400,300">
 	<link rel="stylesheet" type="text/css" href="static/style/global.css">
 	<link rel="stylesheet" type="text/css" href="static/style/register.css">
+	<link rel="stylesheet" type="text/css" href="static/style/login.css">
 </head>
 <body>
 	<?php require "include/header.php" ?>

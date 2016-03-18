@@ -26,9 +26,13 @@
 				setTimeout(function () {
 					elem.innerHTML = opp[index];
 					elem.style.opacity = 1;
-				}, 310);
-			}, 2500);
+				}, 310)
+			}, 2500)
 		})
+
+		function cookies() {
+			alert("Jup, die hebben we")
+		}
 	</script>
 
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -74,7 +78,7 @@
 	</div>
 	<div id="hurrytheforkup" data-bottom-top="background-position: 0% 30%;" data-bottom="background-position: 0% 15%;">
 		<div>
-			Stop met <span id="opp">worteltrekken</span>, 
+			Stop met <span id="opp">worteltrekken</span>,
 			<?php if (!empty($_SESSION["id"])): ?>
 				<a href="/magic.php">Ontdek de y van jouw x</a>
 			<?php else: ?>
@@ -85,9 +89,8 @@
 	<div id="footer">
 		<div>
 			<span>©2016, Wortelduifjes™</span>
-			<span>Cookies</span>
+			<span onclick="cookies()">Cookies</span>
 		</div>
 	</div>
 </body>
 </html>
-

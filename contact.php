@@ -16,17 +16,13 @@
 		<?php require "include/header.php"; ?>
 		<h1>Neem contact met ons op</h1>
 		<h2>Via de onderstaande manieren kunt u contact met ons opnemen. Wij hebben een 24/7 mail en bel service die altijd offline is en we zijn niet bereikbaar via Twitter of Skype.</h2>
+		<p>
+			De makkelijkste manier is om ons te bellen op <strong><i class="fa fa-phone"></i> 0800 232 123</strong> of een e-mail te sturen naar <a href="mailto:info@wortelduifjes.boltgo.lt"><strong><i class="fa fa-envelope"></i> 0800 232 123</strong></a>
+		</p>
+		<p>
+			U kunt ons ook komen bezoeken, wij zijn gevestigd op <strong><i class="fa fa-map-marker"></i> Barendrechtseweg 12, 3241AD Barendrecht</strong>
+		</p>
 			<div id="main">
-				<div id="info">
-					<a href="google.nl"><i class="fa fa-phone"></i><p>Telefoonnummer</p></a></br>
-					<a href="google.nl"><i class="fa fa-envelope"></i><p>Emailadres</p></a></br>
-					<a href="google.nl"><i class="fa fa-fax"></i><p>Fax nummer</p></a></br>
-					<a href="google.nl"><i class="fa fa-facebook"></i><p>Facebook link</p></a></br>
-					<a href="google.nl"><i class="fa fa-skype"></i><p>Skype naam</p></a></br>
-					<a href="google.nl"><i class="fa fa-google-plus"></i><p>Google+ link</p></a></br>
-					<a href="google.nl"><i class="fa fa-twitter"></i><p>Twitter link</p></a></br>
-					<a href="google.nl"><i class="fa fa-map-marker"></i><p>Uhm deze werkt niet</p></a></br>
-				</div>
 				<div id="map"></div>
 				<script>
 					function initMap() {

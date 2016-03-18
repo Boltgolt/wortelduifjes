@@ -14,25 +14,26 @@ p {
 	display: inline-block;
 	margin: 20px 0 -8px 15px;
 }
-#info a {
+a {
 	text-decoration: none;
 	color: black;
-	font-size: 30px;
 }
-#info {
-	float: left;
-	position: relative;
-	margin: 0 auto 0 auto;
-}
+
 #map {
 	position: relative;
 	float: right;
 	width: 400px;
 	height: 500px;
 	margin-left: 10px;
+	margin-top: 20px;
 }
+
 #main {
 	width: 500px;
 	height: 500px;
 	margin: auto;
+}
+
+strong {
+	font-size: 17px;
 }

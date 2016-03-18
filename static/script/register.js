@@ -23,6 +23,7 @@ window.addEventListener("load", function() {
 				}
 				else {
 					document.getElementById("registerButton").innerHTML = "Registreer"
+					document.getElementById("captchaImg").src = "/securimage/securimage_show.php?noCache=" + new Date().getTime();
 					alert(resp.error)
 				}
 

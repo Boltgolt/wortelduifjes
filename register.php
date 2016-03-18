@@ -29,7 +29,7 @@
 		<input id="lookingFor" placeholder="Opzoek naar"><br />
 		<textarea id="description" placeholder="Beschrijving"></textarea><br />
 
-		<img src="/securimage/securimage_show.php"><br />
+		<img id="captchaImg" src="/securimage/securimage_show.php"><br />
 		<input id="captcha" placeholder="Wat is de oplossing op de som hierboven?" type="number"><br />
 
 		<button id="registerButton">Registreer</button>
